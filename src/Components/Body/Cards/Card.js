@@ -7,12 +7,12 @@ import './Cards.css';
 
 const useStyles = makeStyles({
   media: {
-    height: 240,
+    height: 290,
     width: "100%"
   },
   style: {
     cursor: "pointer",
-    height: 400
+    height: 500
   },
   odd: {
     backgroundColor: "black",
@@ -34,32 +34,40 @@ const CardComponent = (props) => {
   const handleClick = (obj) => {
     props.click(obj);
   }
+
+  const handleModal = (obj) => {
+    props.modal(obj);
+  }
   
 
   let element = (
     <CardContent className={classes.even}>
-      <p>{props.object.label}</p>
-      <p>{props.object.name}</p>
-      <p><b>{props.object.price}</b></p>
+      <label>{props.object.label}</label><br/>
+        <label>{props.object.name}</label><br/>
+        <label><b>{props.object.price}</b></label><br/>
+      <button type="button" className="btn btn-dark btn-sm" onClick={() => handleModal(props.object)}>Show</button>
     </CardContent>
   );
+
   console.log(props.index);
   if(props.index%2 !== 0) {
     element = (
       <CardContent className={classes.odd}>
-        <p>{props.object.label}</p>
-        <p>{props.object.name}</p>
-        <p><b>{props.object.price}</b></p>
+        <label>{props.object.label}</label><br/>
+        <label>{props.object.name}</label><br/>
+        <label><b>{props.object.price}</b></label><br/>
+        <button type="button" className="btn btn-light btn-sm" onClick={() => handleModal(props.object)}>Show</button>
       </CardContent>
     );
   }
 
   return (
-    <Card className={classes.style} onClick={() => handleClick(props.object)}>
+    <Card className={classes.style}>
       <CardMedia
           className={classes.media}
           image={props.object.image}
           title="Food Items"
+          onClick={() => handleClick(props.object)}
         />
         {element}
     </Card>

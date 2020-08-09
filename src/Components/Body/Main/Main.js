@@ -4,6 +4,7 @@ import { withRouter } from "react-router-dom";
 import Axios from 'axios';
 import Card from '../Cards/Card';
 import Navbar from '../../Layout/Navbar';
+import Modal from '../Modal/ModalComponent'
 import './searchbox.css';
 import './Main.css';
 
@@ -48,7 +49,7 @@ class Main extends React.Component {
             if(count === n) break;
         }
         for(let i=0;i<n;i++) {
-            ReactDOM.render(<Card object={this.state.foodData[i]} click={this.handleClick} index={i}/>, document.getElementById('prod'+i));
+            ReactDOM.render(<Card object={this.state.foodData[i]} click={this.handleClick} index={i} modal={this.handleModal}/>, document.getElementById('prod'+i));
         }
     }
 
@@ -68,8 +69,14 @@ class Main extends React.Component {
             if(count === n) break;
         }
         for(let i=0;i<n;i++) {
-            ReactDOM.render(<Card object={data[i]} click={this.handleClick} index={i}/>, document.getElementById('filtprod'+i));
+            ReactDOM.render(<Card object={data[i]} click={this.handleClick} index={i} modal={this.handleModal}/>, document.getElementById('filtprod'+i));
         }
+    }
+
+    handleModal = (obj) => {
+        console.log(obj.name);
+        ReactDOM.render(<Modal object={obj}/>,document.getElementById('modaldisp'));
+        document.getElementById('mymodalbtn').click();
     }
     
     handleClick = (obj) => {
@@ -168,6 +175,7 @@ class Main extends React.Component {
                         <span id="container"></span>
                     </div>
                 </div>
+                <span id="modaldisp"></span>
             </Fragment>
         );
     }

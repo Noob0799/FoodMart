@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { withRouter } from "react-router-dom";
 import Axios from 'axios';
 import Navbar from '../../Layout/Navbar';
-import './Item.css';
+import ItemDisplay from './ItemDisplay';
 
 class Item extends React.PureComponent {
     constructor(props){
@@ -39,7 +39,7 @@ class Item extends React.PureComponent {
         }
     }
 
-    handleClick = () => {
+    goBack = () => {
         this.props.history.push('/');
     }
 
@@ -48,31 +48,7 @@ class Item extends React.PureComponent {
         return (
             <Fragment>
                 <Navbar/>
-                <div className="container info">
-                    <div className="row infodisp">
-                        <div className="col-md-6 children">
-                            <span className="back">
-                                <button type="button" className="btn btn-dark" onClick={this.handleClick}>Back</button>
-                            </span>
-                            <div className="image">
-                                <img src={this.state.foodItem.image} alt={this.state.foodItem.name} />
-                            </div>
-                            <div className="price">
-                                <p>{this.state.foodItem.label}</p>
-                                <p><b>{this.state.foodItem.price}$</b></p>
-                            </div>
-                        </div>
-                        <div className="col-md-6 children">
-                            <div className="name my-2">
-                                <p><b>Category:</b> {this.state.foodItem.category}</p>
-                                <p><b>Name:</b> {this.state.foodItem.name}</p>
-                            </div>
-                            <div className="description my-2">
-                                <p>{this.state.foodItem.description}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <ItemDisplay obj={this.state.foodItem} showBack='true' back={this.goBack}/>
             </Fragment>
         );
     }

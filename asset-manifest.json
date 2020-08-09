@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/FoodMart/static/css/main.f980352c.chunk.css",
+    "main.js": "/FoodMart/static/js/main.1ad9c4b1.chunk.js",
+    "main.js.map": "/FoodMart/static/js/main.1ad9c4b1.chunk.js.map",
+    "runtime-main.js": "/FoodMart/static/js/runtime-main.365ca9b5.js",
+    "runtime-main.js.map": "/FoodMart/static/js/runtime-main.365ca9b5.js.map",
+    "static/css/2.45836d5f.chunk.css": "/FoodMart/static/css/2.45836d5f.chunk.css",
+    "static/js/2.76f016b0.chunk.js": "/FoodMart/static/js/2.76f016b0.chunk.js",
+    "static/js/2.76f016b0.chunk.js.map": "/FoodMart/static/js/2.76f016b0.chunk.js.map",
+    "index.html": "/FoodMart/index.html",
+    "precache-manifest.fc84ee72c6fbd9c0dd328a57ce011a4f.js": "/FoodMart/precache-manifest.fc84ee72c6fbd9c0dd328a57ce011a4f.js",
+    "service-worker.js": "/FoodMart/service-worker.js",
+    "static/css/2.45836d5f.chunk.css.map": "/FoodMart/static/css/2.45836d5f.chunk.css.map",
+    "static/css/main.f980352c.chunk.css.map": "/FoodMart/static/css/main.f980352c.chunk.css.map",
+    "static/js/2.76f016b0.chunk.js.LICENSE.txt": "/FoodMart/static/js/2.76f016b0.chunk.js.LICENSE.txt",
+    "static/media/mdb.css": "/FoodMart/static/media/arrow_right.8ef6a08c.svg",
+    "static/media/all.min.css": "/FoodMart/static/media/fa-solid-900.ee09ad75.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.365ca9b5.js",
+    "static/css/2.45836d5f.chunk.css",
+    "static/js/2.76f016b0.chunk.js",
+    "static/css/main.f980352c.chunk.css",
+    "static/js/main.1ad9c4b1.chunk.js"
+  ]
+}

@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "61df1311b1ccf551d823a56befc9ccad",
+    "revision": "62247b732ef082850c2bc3bb5fcacfe4",
     "url": "/FoodMart/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FoodMart/static/css/2.45836d5f.chunk.css"
   },
   {
-    "revision": "2d44afb976062b341e97",
+    "revision": "a2bbcef975c0e290e2f4",
     "url": "/FoodMart/static/css/main.f980352c.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FoodMart/static/js/2.76f016b0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2d44afb976062b341e97",
-    "url": "/FoodMart/static/js/main.1ad9c4b1.chunk.js"
+    "revision": "a2bbcef975c0e290e2f4",
+    "url": "/FoodMart/static/js/main.f1729545.chunk.js"
   },
   {
     "revision": "95275719205cbf07d4e5",

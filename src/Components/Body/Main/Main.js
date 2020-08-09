@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom';
 import { withRouter } from "react-router-dom";
 import Axios from 'axios';
 import Card from '../Cards/Card';
-import Navbar from '../../Navbar/Navbar';
+import Navbar from '../../Layout/Navbar';
 import './searchbox.css';
+import './Main.css';
 
 class Main extends React.Component {
     constructor(props){

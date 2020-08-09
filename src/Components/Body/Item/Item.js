@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { withRouter } from "react-router-dom";
 import Axios from 'axios';
-import Navbar from '../../Navbar/Navbar';
+import Navbar from '../../Layout/Navbar';
 import './Item.css';
 
 class Item extends React.PureComponent {
@@ -49,7 +49,7 @@ class Item extends React.PureComponent {
             <Fragment>
                 <Navbar/>
                 <div className="container info">
-                    <div className="row my-5">
+                    <div className="row infodisp">
                         <div className="col-md-6 children">
                             <span className="back">
                                 <button type="button" className="btn btn-dark" onClick={this.handleClick}>Back</button>

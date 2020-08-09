@@ -40,7 +40,7 @@ class Item extends React.PureComponent {
     }
 
     goBack = () => {
-        this.props.history.push('/');
+        this.props.history.push('/Noob0799');
     }
 
     render() {

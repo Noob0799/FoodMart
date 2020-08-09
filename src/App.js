@@ -10,8 +10,8 @@ export default class App extends Component {
       <div className="App">
         <Router>
           <Fragment>
-            <Route exact path="/" component={Main} />
-            <Route exact path="/food/:id" component={Item} />
+            <Route exact path="/Noob0799" component={Main} />
+            <Route exact path="/Noob0799/food/:id" component={Item} />
           </Fragment>
         </Router>
       </div>
